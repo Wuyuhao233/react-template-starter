@@ -1,5 +1,7 @@
-import axios from 'axios'
-export const RequestMenu = axios({
-    method:'get',
-    url:'http://localhost:3010/menu'
-})
+import axios from "axios";
+const instance = axios.create({
+  baseURL: "http://localhost:3010",
+  timeout: 5000,
+});
+
+export { instance };
