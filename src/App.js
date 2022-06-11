@@ -1,20 +1,16 @@
-import { Route, Routes } from "react-router-dom";
-import "./App.less";
-import HomePage from "./component/home";
-import Login from "./component/login";
-import Profile from "./component/profile";
 
+import "./App.less";
+import RouteGuard from "./component/routeGuard";
+
+
+import { routeTable } from "./router";
 
 function App() {
-  return (
-    <div className="App">
-      <Routes>
-        <Route path="/home" element={<HomePage/>} />
-        <Route path="/" element={<Login/>}/>
-        <Route path="/profile" element={<Profile/>}/>
-      </Routes>
-    </div>
-  );
+
+  return <div className="App">
+    <RouteGuard routes={routeTable}/>
+ 
+  </div>;
 }
 
 export default App;
