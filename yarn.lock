@@ -7970,6 +7970,11 @@ react-router-dom@6:
     history "^5.2.0"
     react-router "6.3.0"
 
+react-router-middleware-plus@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/react-router-middleware-plus/-/react-router-middleware-plus-1.1.2.tgz#7b85a405d6725f4dc440fe190bd228d54f3d531e"
+  integrity sha512-2RPG6fvbhqJTaQx3hSBY6hGRi0NC0TXmfDUDstf/NoGFI7Kd9kcK5n6RpuNzkzcfw48deodY1XGacfWvPzzvoA==
+
 react-router@6.3.0:
   version "6.3.0"
   resolved "https://registry.yarnpkg.com/react-router/-/react-router-6.3.0.tgz#3970cc64b4cb4eae0c1ea5203a80334fdd175557"

@@ -1,6 +1,6 @@
 import { Button } from "antd";
 import React from "react";
-import { getTree } from "../utils/axios";
+import { getTree } from "../request/axios";
 import Tree123 from "./exe";
 import TreePage from "./Tree";
 

@@ -1,7 +1,7 @@
 import { Button, Tree } from "antd";
 import Search from "antd/lib/input/Search";
 import React, { useEffect, useMemo, useState } from "react";
-import { getTree } from "../utils/axios";
+import { getTree } from "../request/axios";
 
 // _level: number, _preKey?: React.Key, _tns?: DataNode[]
 

@@ -1,7 +1,7 @@
 // import { Menu,Layout } from "antd"
 import { Layout, Menu } from "antd";
 import React, { useEffect, useState } from "react";
-import { getMenu } from "../utils/axios";
+import { getMenu } from "../request/axios";
 // 布局容器
 const { Header, Content, Footer, Sider } = Layout;
 
