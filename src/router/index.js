@@ -1,5 +1,9 @@
 import HomePage from "@/pages/home";
 import Homeson from "@/pages/home/homeson";
+import Progress from "@/pages/home/Progress";
+import Project from "@/pages/home/project";
+import QC from "@/pages/home/QC";
+import SafeControl from "@/pages/home/safeControl";
 import LoginPage from "@/pages/login";
 import { getLocalToken } from "@/utils";
 
@@ -10,12 +14,12 @@ import { useMiddlewareRoutes } from "react-router-middleware-plus";
 export default function RouterGuard() {
   //  需要在mount 时判断
 
-  const UsecheckLogin = ({children}) => {
+  const UsecheckLogin = ({ children }) => {
     const token = getLocalToken();
     const navigate = useNavigate();
     useEffect(() => {
       if (!token) {
-        navigate('/login')
+        navigate("/login");
       }
     });
     return token ? children : null;
@@ -38,9 +42,24 @@ export default function RouterGuard() {
       element: <HomePage />,
       children: [
         {
-          path: "homeson",
-          key: "homeson",
-          element: <Homeson />,
+          path: "projectList",
+          key: "project",
+          element: <Project />,
+        },
+        {
+          path: "ceju",
+          key: "ceju",
+          element: <QC />,
+        },
+        {
+          path: "tower",
+          key: "tower",
+          element: <SafeControl />,
+        },
+        {
+          path: "processCheck",
+          key: "processCheck",
+          element: <Progress />,
         },
       ],
     },

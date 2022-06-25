@@ -27,7 +27,6 @@ export default function LoginPage() {
         message.error(data.desc);
       }
     }
-    // 要嘛 -1 或者去主页
   };
 
   return (

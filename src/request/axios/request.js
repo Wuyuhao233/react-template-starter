@@ -10,7 +10,8 @@ export const instance = axios.create({
 instance.interceptors.request.use(
   (config) => {
     const token = getLocalToken();
-    config.headers.Authorization = "Bearer" + token;
+    // 这两者之间需要有空格
+    config.headers.Authorization = "Bearer " + token;
     return config;
   },
   (err) => {
@@ -18,4 +19,3 @@ instance.interceptors.request.use(
   }
 );
 // 响应拦截
-
