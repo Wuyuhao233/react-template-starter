@@ -12,6 +12,7 @@
     "antd": "^4.20.7",
     "axios": "^0.27.2",
     "craco-less": "^2.0.0",
+    "dayjs": "^1.11.3",
     "md5": "^2.3.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
@@ -23,7 +24,7 @@
   },
   "scripts": {
     "start": " set PORT=9000 && craco start ",
-    "build": "craco build",
+    "build": " craco build",
     "test": "craco test",
     "eject": "react-scripts eject",
     "json-server": "json-server __mock__/db.json --watch --port 3010"

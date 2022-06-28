@@ -1,5 +1,4 @@
 import HomePage from "@/pages/home";
-import Homeson from "@/pages/home/homeson";
 import Progress from "@/pages/home/Progress";
 import Project from "@/pages/home/project";
 import QC from "@/pages/home/QC";
@@ -16,6 +15,7 @@ export default function RouterGuard() {
 
   const UsecheckLogin = ({ children }) => {
     const token = getLocalToken();
+    console.log('token',token)
     const navigate = useNavigate();
     useEffect(() => {
       if (!token) {
